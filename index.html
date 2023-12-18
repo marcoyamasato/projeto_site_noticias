@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <h1>EBAC News</h1>
+
+            <div>
+                <input type="text">
+                <button>Pesquisar</button>
+            </div>
+        </div>
+
+        <div class="botao_menu">
+            <button type="button" id="botao_exibe_menu">Abrir menu</button>
+        </div>
+
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">Esportes</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Futebol</a>
+                        </li>
+                        <li>
+                            <a href="#">Basket</a>
+                        </li>
+                        <li>
+                            <a href="#">Formula 1</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Economia</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Bolsa de valores</a>
+                        </li>
+                        <li>
+                            <a href="#">PIB</a>
+                        </li>
+                        <li>
+                            <a href="#">BACEN</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="clear"></div>
+
+    </header>
+
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/320x320"/>
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde.</h3>
+                    </a>
+                </article>
+            </section>
+            
+            <section class="ultimas_noticias">
+                <h2>Últimas notícias</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320"/>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde.</h3>
+                        </a>
+                    </article>
+
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320"/>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde.</h3>
+                        </a>
+                    </article>
+
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320"/>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde.</h3>
+                        </a>
+                    </article>
+
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320"/>
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde. lore</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+
+            <section>
+                <h2>Novidades</h2>
+                <article class="noticia">
+                    <a href="">
+                        <img src="https://via.placeholder.com/320x320"/>
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde.</h3>
+                    </a>
+                </article>
+
+                <article class="noticia">
+                    <a href="">
+                        <img src="https://via.placeholder.com/320x320"/>
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde.</h3>
+                    </a>
+                </article>
+
+                <article class="noticia">
+                    <a href="">
+                        <img src="https://via.placeholder.com/320x320"/>
+                        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis deserunt facere quibusdam dolore omnis? Molestias ipsa odit maxime eos iure unde.</h3>
+                    </a>
+                </article>
+            </section>
+
+        </aside>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#botao_exibe_menu').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

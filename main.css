@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header{
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid red;
+    left: 0; /*Quero que seja exibido no máximo a esquerda*/
+    width: 300px; /*somente para não quebrar o texto em duas linhas*/
+    top: 100%; /*Quero que inicie no topo máximo do meu elemento*/
+}
+
+li:hover .submenu{
+    display: block;
+}
+
+.menu li:hover{
+    border-top: 4px solid red;
+}
+
+.clear{
+    clear: both;
+}
+
+.submenu li{
+    display: block;
+    padding: 8px;
+}
+
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.noticia img{
+    max-width: 100%;
+}
+
+.destaque{
+    margin-bottom: 56px;
+}
+
+.destaque .noticia a{
+    display: flex;
+    font-size: 2em;
+}
+
+.destaque .noticia img{
+    margin-right: 8px;
+}
+
+aside{
+    margin-left: 8px;
+}
+
+aside .noticia{
+    margin-bottom: 24px;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns:repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+#botao_exibe_menu{
+    display: none;
+}
+
+@media screen and (max-width: 767px){ /*Tela de celular*/
+    .conteudo{
+        display: block;
+    }
+    .destaque .noticia a{
+        display: block;
+        font-size: 2em;
+    }
+
+    aside{
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    
+    aside .noticia{
+        margin-bottom: 24px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu > li{
+        clear: both;
+    }
+
+    .submenu{
+        display: block;
+        position: relative;
+        border: none;
+        width: 100%; /*somente para não quebrar o texto em duas linhas*/
+    }
+
+    .botao_menu{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .botao_menu button{
+        padding: 10px;
+    }
+
+    #botao_exibe_menu{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){/*Tablets*/
+    .container{
+        max-width: 90%;
+    }
+
+    .destaque .noticia a{
+        font-size: 1.5em;
+    }
+
+    .noticias{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
